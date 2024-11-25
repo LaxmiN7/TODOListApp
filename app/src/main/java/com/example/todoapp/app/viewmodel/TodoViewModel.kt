@@ -42,23 +42,6 @@ class TodoViewModel @Inject constructor(
         _searchText.value = newSearchText
     }
 
-    fun clearTitle() {
-        _title.value = ""
-    }
-
-    /*fun clearSearchText() {
-        _searchText.value = ""
-        Log.d("TodoViewModel", "Clearing searchText")
-    }*/
-
-    fun clearSearchText() {
-        if (_searchText.value.isNotEmpty()) {
-            _searchText.value = ""
-            Log.d("TodoViewModel", "Search text cleared")
-        }
-    }
-
-
     // Set error message
     fun setError(errorMessage: String?) {
         _error.value = errorMessage
